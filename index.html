@@ -1,50 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
+
 <body>
     <div class="wrap1">
-     <div class="container">
-        <div class="title">
-            <input type="button" value="My Portfolio" class="loginButton" >
+        <div class="container">
+            <div class="title">
+                <input type="button" value="My Portfolio" class="loginButton">
             </div>
-        <div class="empty"></div>
-        <div class="A">
-            <input type="button" value="Home" class="loginButton" >
-        </div>
-        <div class="B">
-            <input type="button" value="About" class="loginButton" >
+            <div class="empty"></div>
+            <div class="A">
+                <input type="button" value="Home" class="loginButton">
             </div>
-        <div class="C">
-            <input type="button" value="Contact" class="loginButton" >
-           </div>
-        <div class="D">
-            <input type="button" value="Resume" class="loginButton" >
-        </div>
-        <div class="E">
-             <input type="button" value="Login" class="loginButton">
-        </div> 
-     </div><br>
-    <div class="wrap2">
-        <div class="container1">
-            <div class="information">
-                <h1 class="intro">Hi, I'm Amin</h1>
-                <h2 class="designation">A Frontend Developer</h2>
-                <h3>I'm always trying to bring real value and define problem's
-                    with my code. Welcome to my portfolio.
-                </h3>
-                <input type="button" value="CHECK OUT MY WORK" class="checkWork">
+            <div class="B">
+                <input type="button" value="About" class="loginButton">
             </div>
-            <div class="photo">
-               
+            <div class="C">
+                <input type="button" value="Contact" class="loginButton">
+            </div>
+            <div class="D">
+                <input type="button" value="Resume" class="loginButton">
+            </div>
+            <div class="E">
+                <input type="button" value="Login" class="loginButton">
+            </div>
+        </div><br>
+        <div class="empty2"></div>
+        <div class="wrap2">
+            <div class="container1">
+                <div class="information">
+                    <h1 class="intro">Hi, I'm Amin</h1>
+                    <h2 class="designation">A Frontend Developer</h2>
+                    <h3>I'm always trying to bring real value and define problem's
+                        with my code. Welcome to my portfolio.
+                    </h3>
+                    <input type="button" value="CHECK OUT MY WORK" class="checkWork">
+                </div>
+                <div class="photo">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="./Images/normal7 (1).jpg" alt="" class="photo"></div>
+                            <div class="swiper-slide"><img src="./Images/horizontal1.jpg" alt="" class="photo"></div>
+                            <div class="swiper-slide"><img src="./Images/horizontal2.jpg" alt="" class="photo"></div>
+                            <div class="swiper-slide"><img src="./Images/normal4.jpg" alt="" class="photo"></div>
+                            <div class="swiper-slide"><img src="./Images/normal6.jpg" alt="" class="photo"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div></div>
+    
+                </div>
             </div>
         </div>
     </div>
-    </div>
- 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./Js/main.js"></script>
 </body>
+
 </html>

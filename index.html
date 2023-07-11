@@ -12,24 +12,27 @@
 <body>
     <div class="wrap1">
         <div class="container">
-            <div class="title">
+            <div class="myPortfolio">
                 <input type="button" value="My Portfolio" class="loginButton">
             </div>
             <div class="empty"></div>
-            <div class="A">
+            <div class="home">
                 <input type="button" value="Home" class="loginButton">
             </div>
-            <div class="B">
+            <div class="about">
                 <input type="button" value="About" class="loginButton">
             </div>
-            <div class="C">
+            <div class="contact">
                 <input type="button" value="Contact" class="loginButton">
             </div>
-            <div class="D">
+            <div class="resume">
                 <input type="button" value="Resume" class="loginButton">
             </div>
-            <div class="E">
+            <div class="login" id="login">
                 <input type="button" value="Login" class="loginButton">
+            </div>
+            <div class="signup" id="signup">
+                <input type="button" value="Sign Up" class="loginButton" onclick="popUp('signup')">
             </div>
         </div><br>
         <div class="empty2"></div>
@@ -38,7 +41,7 @@
                 <div class="information">
                     <h1 class="intro">Hi, I'm Amin</h1>
                     <h2 class="designation">A Frontend Developer</h2>
-                    <h3>I'm always trying to bring real value and define problem's
+                    <h3 >I'm always trying to bring real value and define problem's
                         with my code. Welcome to my portfolio.
                     </h3>
                     <input type="button" value="CHECK OUT MY WORK" class="checkWork">
@@ -65,6 +68,41 @@
                     <div></div>
     
                 </div>
+            </div>
+        </div>
+        //login form for pop up
+        <div class="modal" id="loginModal">
+            <div class="modalContent" id="modelContent">
+                <div class="sign">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="headerLogin">
+                    <h2>Login</h2>
+                </div>
+                <form action="" method="POST" class="field">
+                    <input type="text" placeholder="Username" required id="name"><br>
+                    <input type="password" placeholder="Password" required id="password"><br>
+                    <input type="submit" value="Login" id="submit"><br>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox" id="remember">Remember Me</label>
+                </form>
+            </div>
+        </div>
+        //Signin form for pop up
+        <div class="sModal" id="sLoginModal">
+            <div class="sModalContent" id="sModelContent">
+                 <div class="sign">
+                    <span class="close">&times;</span>
+                 </div>
+                 <div class="headerSignup">
+                    <h2>Sign Up</h2>
+                 </div>
+                 <form action="" method="POST" class="field">
+                    <input type="text" placeholder="Username" required id="sName"><br>
+                    <input type="password" placeholder="Password" required id="sPassword"><br>
+                    <input type="email" placeholder="email" required id="ePassword"><br>
+                    <input type="submit" value="Register" id="sSubmit"><br>
+                 </form>
             </div>
         </div>
     </div>

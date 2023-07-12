@@ -2,8 +2,9 @@
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(2,1fr);
-    background-color: darkgray;
     font-style: italic;
+    color: gray;
+    
   }
   .Email{
     grid-column-start: 4;
@@ -66,4 +67,8 @@
   }
   .cont{
     margin-left: 16px;
+  }
+  .Contact:hover{
+    border: 1px solid purple;
+    border-radius: 16px;
   }

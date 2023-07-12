@@ -1,117 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mainPage</title>
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/contact.css" />
+    <link rel="stylesheet" href="Css/loginSignup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./Css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-</head>
-
-<body>
+  <body>
     <div class="wrap1">
-        <div class="container">
-            <div class="myPortfolio">
-                <input type="button" value="My Portfolio" class="loginButton">
-            </div>
-            <div class="empty"></div>
-            <div class="home">
-                <input type="button" value="Home" class="loginButton">
-            </div>
-            <div class="about">
-                <input type="button" value="About" class="loginButton">
-            </div>
-            <div class="contact">
-                <input type="button" value="Contact" class="loginButton">
-            </div>
-            <div class="resume">
-                <input type="button" value="Resume" class="loginButton">
-            </div>
-            <div class="project">
-                <input type="button" value="Project" class="loginButton">
-            </div>
-            <div class="login" id="login">
-                <input type="button" value="Login" class="loginButton" onclick="popUp('login')">
-            </div>
-            <div class="signup" id="signup">
-                <input type="button" value="Sign Up" class="loginButton" onclick="popUp('signup')">
-            </div>
-        </div><br>
-        <div class="empty2"></div>
-        <div class="wrap2">
-            <div class="container1">
-                <div class="information">
-                    <h1 class="intro">Hi, I'm Md.Sheikh Amin</h1>
-                    <h2 class="designation">A Frontend Developer</h2>
-                    <h3 >I'm always trying to bring real value and define problem's
-                        with my code. Welcome to my portfolio.
-                    </h3>
-                    <input type="button" value="CHECK OUT MY WORK" class="checkWork">
+      <div class="container">
+        <div class="myPortfolio">
+          <input type="button" value="My Portfolio" class="loginButton" />
+        </div>
+        <div class="empty"></div>
+        <div class="home">
+          <input type="button" value="Home" class="loginButton" />
+        </div>
+        <div class="about">
+          <input type="button" value="About" class="loginButton" />
+        </div>
+        <div class="contact">
+          <input type="button" value="Contact" class="loginButton" />
+        </div>
+        <div class="resume">
+          <input type="button" value="Resume" class="loginButton" />
+        </div>
+        <div class="project">
+          <input type="button" value="Project" class="loginButton" />
+        </div>
+        <div class="login" id="login">
+          <input
+            type="button"
+            value="Login"
+            class="loginButton"
+            onclick="popUp('login')"
+          />
+        </div>
+        <div class="signup" id="signup">
+          <input
+            type="button"
+            value="Sign Up"
+            class="loginButton"
+            onclick="popUp('signup')"
+          />
+        </div>
+      </div>
+      <br />
+      <div class="empty2"></div>
+      <div class="wrap2">
+        <div class="container1">
+          <div class="information">
+            <h1 class="intro">Hi, I'm Md.Sheikh Amin</h1>
+            <h2 class="designation">A Frontend Developer</h2>
+            <h3>
+              I'm always trying to bring real value and define problem's with my
+              code. Welcome to my portfolio.
+            </h3>
+            <input type="button" value="CHECK OUT MY WORK" class="checkWork" />
+          </div>
+          <div class="photo">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="./Images/normal7 (1).jpg" alt="" class="photo" />
                 </div>
-                <div class="photo">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide"><img src="./Images/normal7 (1).jpg" alt="" class="photo"></div>
-                            <div class="swiper-slide"><img src="./Images/horizontal1.jpg" alt="" class="photo"></div>
-                            <div class="swiper-slide"><img src="./Images/horizontal2.jpg" alt="" class="photo"></div>
-                            <div class="swiper-slide"><img src="./Images/normal4.jpg" alt="" class="photo"></div>
-                            <div class="swiper-slide"><img src="./Images/normal6.jpg" alt="" class="photo"></div>
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
+                <div class="swiper-slide">
+                  <img src="./Images/horizontal1.jpg" alt="" class="photo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Images/horizontal2.jpg" alt="" class="photo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Images/normal4.jpg" alt="" class="photo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Images/normal6.jpg" alt="" class="photo" />
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
 
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                    <div></div>
-    
-                </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
+            <div></div>
+          </div>
         </div>
-        //login form for pop up
-        <div class="modal" id="loginModal">
-            <div class="modalContent" id="modelContent">
-                <div class="sign">
-                    <span class="close">&times;</span>
-                </div>
-                <div class="headerLogin">
-                    <h2>Login</h2>
-                </div>
-                <form action="" method="POST" class="field">
-                    <input type="text" placeholder="Username" required id="name"><br>
-                    <input type="password" placeholder="Password" required id="password"><br>
-                    <input type="submit" value="Login" id="submit"><br>
-                    <input type="checkbox" name="checkbox" id="checkbox">
-                    <label for="checkbox" id="remember">Remember Me</label>
-                </form>
-            </div>
+      </div>
+      //login form for pop up
+      <div class="modal" id="loginModal">
+        <div class="modalContent" id="modelContent">
+          <div class="sign">
+            <span class="close">&times;</span>
+          </div>
+          <div class="headerLogin">
+            <h2>Login</h2>
+          </div>
+          <form action="" method="POST" class="field">
+            <input
+              type="text"
+              placeholder="Username"
+              required
+              id="name"
+            /><br />
+            <input
+              type="password"
+              placeholder="Password"
+              required
+              id="password"
+            /><br />
+            <input type="submit" value="Login" id="submit" /><br />
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox" id="remember">Remember Me</label>
+          </form>
         </div>
-        //Signin form for pop up
-        <div class="sModal" id="sLoginModal">
-            <div class="sModalContent" id="sModelContent">
-                 <div class="sign">
-                    <span class="sClose">&times;</span>
-                 </div>
-                 <div class="headerSignup">
-                    <h2>Sign Up</h2>
-                 </div>
-                 <form action="" method="POST" class="field">
-                    <input type="text" placeholder="Username" required id="sName"><br>
-                    <input type="password" placeholder="Password" required id="sPassword"><br>
-                    <input type="email" placeholder="email" required id="ePassword"><br>
-                    <input type="submit" value="Register" id="sSubmit"><br>
-                 </form>
-            </div>
+      </div>
+      //Signin form for pop up
+      <div class="sModal" id="sLoginModal">
+        <div class="sModalContent" id="sModelContent">
+          <div class="sign">
+            <span class="sClose">&times;</span>
+          </div>
+          <div class="headerSignup">
+            <h2>Sign Up</h2>
+          </div>
+          <form action="" method="POST" class="field">
+            <input
+              type="text"
+              placeholder="Username"
+              required
+              id="sName"
+            /><br />
+            <input
+              type="password"
+              placeholder="Password"
+              required
+              id="sPassword"
+            /><br />
+            <input
+              type="email"
+              placeholder="email"
+              required
+              id="ePassword"
+            /><br />
+            <input type="submit" value="Register" id="sSubmit" /><br />
+          </form>
         </div>
+      </div>
+      <tfoot>
+        <div class="Contact">
+          <h3 class="cont">Contact</h3>
+
+          <p class="Email">Email</p>
+          <br />
+
+          <span class="eAddress">sheikhamin.cs@gmail.com</span>
+          <p class="linkedIn">LinkedIn</p>
+          <br />
+          <a href="" class="linkedIn">
+            <span class="lAddress">linkedinadd</span><br />
+          </a>
+
+          <p class="git">GitHub</p>
+          <br />
+          <a href="https://github.com/SheikhAmin" class="gitAddress">
+            <span class="gitAddress">https://github.com/SheikhAmin</span><br />
+          </a>
+
+          <p class="phone">Contact Number</p>
+          <br />
+          <span class="number">01521255651</span><br />
+        </div>
+      </tfoot>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./Js/main.js"></script>
     <script src="Js/loginSignup.js"></script>
-</body>
-
+  </body>
 </html>

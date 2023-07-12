@@ -11,24 +11,7 @@ body {
   font-size: 16px;
   width: 100%;
 }
-/*.modal{
-    color: gray;
-    font-size: 16px;
-    display: block;
-    z-index: 1;
-    position: relative;
-}
-.modalContent{
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: lightgray;
-    width: 20%;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding: 20px;
-}*/
+
 .modal {
   display: none; /* Initially hide the modal */
   position: fixed;
@@ -56,16 +39,14 @@ body {
   width: 100%;
 }
 #name,
-#password,#sname,#epassword,#spassword {
+#password,#sName,#ePassword,#sPassword {
   width: 75%;
   margin: 3px;
   padding: 3px;
 }
 #remember {
-  width: 65%;
+  width: 100%;
   font-weight: bold;
-  margin: 3px;
-  padding: 3px;
 }
 #submit,#sSubmit {
   margin: 3px;
@@ -160,6 +141,12 @@ body {
   grid-column-start: 8;
   grid-column-end: 8;
 }
+.project{
+  grid-area: g;
+  color: white;
+  grid-column-start: 9;
+  grid-column-end: 9;
+}
 .login {
   grid-area: e;
   color: white;
@@ -234,12 +221,12 @@ body {
 }
 
 .close:hover,
-.close:focus {
+.close:focus,.sClose:hover,.sClose:focus {
   cursor: pointer;
   transform: scale(1.1);
   color: purple;
 }
-.close {
+.close,.sClose {
   font-weight: bold;
   font-size: 20px;
   float: right;

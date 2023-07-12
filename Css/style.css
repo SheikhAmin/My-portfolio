@@ -12,62 +12,11 @@ body {
   width: 100%;
 }
 
-.modal {
-  display: none; /* Initially hide the modal */
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.sModal{
-  display: none; /* Initially hide the modal */
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
 .wrap1 {
   height: 100%;
   width: 100%;
 }
-#name,
-#password,#sName,#ePassword,#sPassword {
-  width: 75%;
-  margin: 3px;
-  padding: 3px;
-}
-#remember {
-  width: 100%;
-  font-weight: bold;
-}
-#submit,#sSubmit {
-  margin: 3px;
-  padding: 3px;
-}
-.modalContent,.sModalContent {
-  background-color: whitesmoke;
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 20%;
-  border-radius: 16px;
-  display: grid;
-  justify-content: center;
-}
-.headerLogin,.headerSignup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
+
 .container1 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -81,9 +30,9 @@ body {
     font-size: 18px;
     margin: 0 auto;
   }
-.container1{
+  .container1 {
     width: 90%;
-}
+  }
   .modalContent {
     width: 15%;
   }
@@ -141,7 +90,7 @@ body {
   grid-column-start: 8;
   grid-column-end: 8;
 }
-.project{
+.project {
   grid-area: g;
   color: white;
   grid-column-start: 9;
@@ -218,16 +167,4 @@ body {
 
 .photo {
   width: 520px;
-}
-
-.close:hover,
-.close:focus,.sClose:hover,.sClose:focus {
-  cursor: pointer;
-  transform: scale(1.1);
-  color: purple;
-}
-.close,.sClose {
-  font-weight: bold;
-  font-size: 20px;
-  float: right;
 }

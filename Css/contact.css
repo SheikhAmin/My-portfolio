@@ -4,7 +4,7 @@
     grid-template-rows: repeat(2,1fr);
     font-style: italic;
     color: gray;
-    
+  
   }
   .Email{
     grid-column-start: 4;
@@ -31,7 +31,7 @@
     text-decoration: underline;
     grid-column-start: 6;
     grid-column-end: 7;
-    color: black;
+    color: gray;
   }
   .phone{
     font-size: 20px;
@@ -60,7 +60,7 @@
     grid-row-end: 2;
     grid-column-start: 8;
     grid-column-end: 9;
-    color: black;
+    color:gray ;
   }
   .cont:hover,.Email:hover,.eAddress:hover,.linkedIn:hover,.lAddress:hover,.git:hover,.gitAddress:hover,.phone:hover,.number:hover{
     transform: scale(1.2);

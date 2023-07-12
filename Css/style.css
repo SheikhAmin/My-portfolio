@@ -11,11 +11,13 @@ body {
   grid-gap: 2px;
   font-size: 16px;
   width: 100%;
-}
+  scale: .7;
 
+}
 .wrap1 {
   height: 100%;
   width: 100%;
+ 
 }
 
 .container1 {
@@ -31,9 +33,11 @@ body {
     grid-gap: 4px;
     font-size: 18px;
     margin: 0 auto;
+    scale: 1;
   }
   .container1 {
     width: 90%;
+    scale: 1;
   }
   .modalContent {
     width: 15%;
@@ -49,6 +53,7 @@ body {
     max-width: 1024px;
     grid-gap: 6px;
     font-size: 20px;
+    scale: 1.5;
   }
   .modalContent {
     width: 18%;

@@ -1,74 +1,188 @@
-.Contact{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(2,1fr);
-    font-style: italic;
-    color: gray;
+.Contact {
+  display: grid;
+  grid-template-rows: repeat(auto, 1fr);
+  font-style: italic;
+  color: gray;
+  width: 100%;
+  grid-gap: 2px;
+  scale: .7;
+  font-size: 16px;
+}
+
+
+.cont:hover,
+.Email:hover,
+.eAddress:hover,
+.linkedIn:hover,
+.lAddress:hover,
+.git:hover,
+.gitAddress:hover,
+.phone:hover,
+.number:hover {
+  transform: scale(1.1);
+}
+.cont{
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .Contact {
+    max-width: 768px;
+    grid-gap: 4px;
+    font-size: 18px;
+    margin: 0 auto;
+    scale: 1;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
   
-  }
-  .Email{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 1;
+.Email {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.eAddress {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.lAddress {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  text-decoration: none;
+}
+
+.linkedIn {
+  font-size: 20px;
+  text-decoration: underline;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  color: gray;
+}
+
+.phone {
+  font-size: 20px;
+  text-decoration: underline;
+  grid-column-start: 10;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.number {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 10;
+  grid-column-end: 11;
+}
+
+.git {
+  font-size: 20px;
+  text-decoration: underline;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.gitAddress {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  color: gray;
+}
+}
+
+@media (min-width: 1024px) {
+  .Contact {
+    max-width: 1024px;
+    grid-gap: 6px;
     font-size: 20px;
-    text-decoration: underline;
+    scale: 1.1;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
-  .eAddress{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 2;
-  }
-  .lAddress{
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 6;
-    grid-column-end: 7;
-  }
-  .linkedIn{
-    font-size: 20px;
-    text-decoration: underline;
-    grid-column-start: 6;
-    grid-column-end: 7;
-    color: gray;
-  }
-  .phone{
-    font-size: 20px;
-    text-decoration: underline;
-    grid-column-start: 10;
-    grid-column-end: 11;
-    grid-row-start: 1;
-    grid-row-end: 1;
-  }
-  .number{
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 10;
-    grid-column-end: 11;
-  }
-  .git{
-    font-size: 20px;
-    text-decoration: underline;
-    grid-column-start: 8;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 1;
-  }
-  .gitAddress{
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 8;
-    grid-column-end: 9;
-    color:gray ;
-  }
-  .cont:hover,.Email:hover,.eAddress:hover,.linkedIn:hover,.lAddress:hover,.git:hover,.gitAddress:hover,.phone:hover,.number:hover{
-    transform: scale(1.2);
-  }
-  .cont{
-    margin-left: 16px;
-  }
-  .Contact:hover{
-    border: 1px solid purple;
-    border-radius: 16px;
-  }
+  
+.Email {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.eAddress {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.lAddress {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 6;
+  grid-column-end: 7;
+}
+
+.linkedIn {
+  font-size: 20px;
+  text-decoration: underline;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  color: gray;
+}
+
+.phone {
+  font-size: 20px;
+  text-decoration: underline;
+  grid-column-start: 10;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.number {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 10;
+  grid-column-end: 11;
+}
+
+.git {
+  font-size: 20px;
+  text-decoration: underline;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.gitAddress {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  color: gray;
+}
+
+}
+.git,.gitAddress,.number,.phone,.lAddress,.linkedIn,.eAddress,.Email{
+  color: gray;
+}
+.gitAddress,.lAddress,.eAddress.number{
+  text-decoration: none;
+}
+.gitAddress:hover,.lAddress:hover,.eAddress:hover,.number:hover{
+ color:whitesmoke;
+}

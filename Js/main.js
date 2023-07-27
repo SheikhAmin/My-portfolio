@@ -19,3 +19,13 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+//animation
+
+let typed = new Typed(".text",{
+  strings:[`Web Developer`,`FrontEnd Developer`],
+  typeSpeed:100,
+  backSpeed:100,
+  backDelay:1000,
+  loop:true
+});
+
